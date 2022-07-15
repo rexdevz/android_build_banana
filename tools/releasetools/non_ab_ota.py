@@ -230,12 +230,14 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   script.Print("                                            ");
   script.Print(" BananaDroid                                ");
   script.Print("                                            ");
-  script.Print(" BananaDroid version: BananaDroid-%s"%(banana_version));
+  script.Print(" Version: %s"%(banana_version));
   script.Print(" Android version: %s"%(android_version));
   script.Print(" Build id: %s"%(build_id));
   script.Print(" Security patch: %s"%(security_patch));
   script.Print(" Device: %s"%(device));
   script.Print("                                            ");
+  script.Print("                                            ");
+
   device_specific.FullOTA_InstallBegin()
 
   CopyInstallTools(output_zip)
